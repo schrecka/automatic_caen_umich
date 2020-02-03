@@ -1,0 +1,14 @@
+#!/bin/bash
+# caen
+
+# fix permissions: chmod +x
+
+# Stop on errors
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+
+# upload files to caen using rsync
+./bin/rsync
+
+# login to caen
+./bin/login
