@@ -1,0 +1,14 @@
+#!/usr/bin/expect
+# rsync
+
+# fix permissions: chmod +x 
+
+# Replace [YOUR UNIQNAME] [Local Project Directory] [CAEN Project Directory] [YOUR PASSWORD]
+
+# example rsync: rsync -rtv --exclude '.git*' ../project1/ schrecka@login.engin.umich.edu:484-project1-copy/
+spawn rsync -rtv --exclude '.git*' ../[Local Project Directory]/ [YOUR UNIQNAME]@login.engin.umich.edu:[CAEN Project Directory]/
+expect "Password:"
+send "[YOUR PASSWORD]\n";
+expect "*:"
+send "1\n";
+interact
