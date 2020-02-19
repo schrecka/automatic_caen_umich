@@ -1,7 +1,9 @@
-# AUTO CAEN UMICH
+# AUTO CAEN UMICH [BETA]
 Script to automatically SSH and/or RSYNC into CAEN at University of Michigan
 
 This script enters your password and send a DUO request to your phone
+
+This version is powerful, but not user friendly. Currently working on user interface
 
 ## How to Use
 
